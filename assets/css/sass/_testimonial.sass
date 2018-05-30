@@ -1,0 +1,90 @@
+$bq-margin: 46%
+$bq-margin-small: $bq-margin - 10%
+$bq-margin-xlarge: $bq-margin - 5%
+
+.testimonial
+  position: relative
+  border: 1px solid $lightborder
+  border-radius: 6px
+  padding: 1em 1em .75em
+  margin-bottom: 2em
+
+  // +small
+  //   margin-bottom: 0
+ 
+  .avatar
+    max-width: 22%
+    float: left
+    margin: 0 1em 1em 0
+    position: relative
+    border-radius: 50%
+    display: block
+    +easeall
+
+    +xsmall
+      max-width: 11%
+
+    img
+      border-radius: 50%
+      
+  p
+    color: $headline
+    line-height: 1.375em
+    font-weight: 400
+    font-style: italic
+    display: block
+    position: relative
+    padding: 0 0 1.25em 5em
+    font-size: .75em
+    text-align: left
+    min-height: 5em
+    margin-bottom: 0
+    +serif
+    +easeall
+
+    strong
+      font-weight: 900
+
+  .credentials
+    position: relative
+    //border-top: 1px solid $lightborder
+    padding: .25em .25em 0 3.675em
+    text-align: left
+
+    h3, h5
+      margin: 0
+      line-height: .75em
+      font-style: normal
+
+    h3
+      color: $headline
+      text-transform: uppercase
+      letter-spacing: 1px
+      font-size: .6em
+      font-weight: 900
+      +easeall
+
+    h4
+      color: rgba($headline, .5)
+      font-style: italic
+      font-size: .675em
+      font-weight: bold
+      +serif
+      +easeall
+
+    h5
+      font-size: .45em
+      text-transform: uppercase
+      color: $headline
+      font-weight: 900
+      letter-spacing: 4px
+      +easeall
+
+    img
+      position: absolute
+      top: 0
+      right: .25em
+      height: 32px
+      width: 32px
+      margin: 0
+      +easeall

@@ -1,0 +1,243 @@
+html
+  color: $body
+  box-sizing: border-box
+  background-color: $white
+
+*, *:before, *:after
+  box-sizing: inherit
+
+main
+  width: 100%
+  margin: auto
+
+  +small
+    height: 100%
+
+body
+  font-size: 14px
+  line-height: 1.75em
+  +sans
+  +easeall
+
+strong
+  font-weight: bold
+
+em
+  font-style: italic
+
+img
+  width: 100%
+
+h2, h3, h4, h5, p, li
+  font-size: 14px
+  +sans
+
+h1
+  margin-bottom: 1rem
+  padding-top: 0rem
+  font-weight: 900
+  font-size: 1.6rem
+  line-height: 1.2em
+  +sans
+
+  +small
+    font-size: 2rem
+    padding-top: 0
+
+  +xlarge
+    font-size: 2.5rem
+
+.avatar
+  margin-bottom: 1.25rem
+
+  img
+    border-radius: 50%
+    height: 16px
+    width: 16px
+    float: left
+    margin: .15rem .75rem 0 0
+
+p
+  line-height: 1.5em
+  width: 100%
+  margin-bottom: .5rem
+  +sans
+  +easeall
+
+li
+  line-height: 1.75rem
+
+a
+  color: $dark
+  cursor: pointer
+  +easeall
+
+  &:hover
+    background: $primary
+    +easeall
+
+a.is-active:hover
+  background: none
+
+.controls
+  text-align: center
+  padding: .5rem 0 2.5rem
+
+  +small
+    padding: 1.25rem 0 2rem
+
+  li
+    display: inline
+    font-size: .675rem
+    font-weight: 500
+    padding: 1rem
+
+    +medium
+      text-indent: 0
+      padding: 2rem
+
+    a
+      text-decoration: none
+      padding: .25rem
+      cursor: pointer
+      +easeall
+
+.content
+  display: grid
+  grid-template-columns: 100%
+  grid-column: 2 / 1
+
+  +small
+    grid-template-columns: 1fr 1fr
+    grid-gap: 0rem
+
+  +medium
+    grid-template-columns: 1fr 1fr
+    grid-gap: 0rem
+
+  +large
+    grid-template-columns: 1fr 1.5fr
+    grid-gap: 0rem
+
+  +xlarge
+    grid-template-columns: 1fr 2fr
+    grid-gap: 0rem
+
+.content-inner
+  padding: 0
+  // background: linear-gradient(#fafafa, $white)
+
+  +medium
+    padding: 1rem
+    margin-bottom: 0
+
+.content-text
+  padding: 1rem
+  // background: white
+  max-width: 34rem
+  margin: auto
+  display: block
+  order: 0
+
+  +small
+    padding: 4rem 2rem 4rem 6rem
+
+  +xlarge
+    max-width: 40rem
+
+ul.icons
+  padding: 2rem
+
+.icons li
+  display: inline-block
+  margin:  1rem 0  1rem -4px
+  width: 20%
+
+  +small
+    margin:  3rem 0 2rem -4px
+    width: 20%
+
+  +medium
+    margin:  2rem 0  2rem -4px
+    width: 20%
+
+  +large
+    margin:  2rem 0  2rem -4px
+    width: 20%
+
+  +xlarge
+    margin:  3rem 0  3rem -4px
+    width: 20%
+
+  img, svg
+    width: 24
+    height: 24px
+    text-align: center
+    margin: auto
+    display: block
+    +easeall
+
+    +small
+      width: 32px
+      height: 32px
+      +easeall
+
+    +medium
+      width: 48px
+      height: 48px
+      +easeall
+
+    +xlarge
+      width: 60px
+      height: 60px
+      +easeall
+
+.icons--bold
+  opacity: .75
+
+.icons--out
+  transform: scale(.5)
+  opacity: 0
+  +easespeed(.3s)
+
+.icons--in
+  transform: scale(1)
+  opacity: 1
+  +easespeed(.3s)
+
+.is-active
+  // font-weight: bold
+  box-shadow: 0 1px 0 0 black
+  +easeall
+
+.is-hidden
+  display: none
+
+.is-showing
+  display: block
+
+.emoji
+  display: inline-block
+
+.slide
+  animation: slide .75s infinite
+
+@keyframes slide
+  0%
+    transform: translateX(0)
+
+  50%
+    transform: translateX(.25rem)
+
+  100%
+    transform: translateX(0)
+
+
+
+
+
+
+
+
+
+
