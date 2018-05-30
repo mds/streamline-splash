@@ -55,9 +55,9 @@ $(document).ready(function() {
 
     // Transition icons out
     setTimeout(function () {
-      $("ul.icons--light li").addClass("icons--out");
-      $("ul.icons--regular li").removeClass("icons--in").addClass("icons--out");
-      $("ul.icons--bold li").removeClass("icons--in").addClass("icons--out");
+      $("ul.icons--light li img").addClass("icons--out");
+      $("ul.icons--regular li img").removeClass("icons--in").addClass("icons--out");
+      $("ul.icons--bold li img").removeClass("icons--in").addClass("icons--out");
     }, 0);
 
     // Transition icons in
@@ -69,7 +69,7 @@ $(document).ready(function() {
 
     // Transition icons in
     setTimeout(function () {
-      $("ul.icons--light li").addClass("icons--in");
+      $("ul.icons--light li img").addClass("icons--in");
     }, 350);
 
   };
@@ -84,9 +84,9 @@ $(document).ready(function() {
 
     // Transition icons out
     setTimeout(function () {
-      $("ul.icons--light li").removeClass("icons--in").addClass("icons--out");
-      $("ul.icons--regular li").addClass("icons--out");
-      $("ul.icons--bold li").removeClass("icons--in").addClass("icons--out");
+      $("ul.icons--light li img").removeClass("icons--in").addClass("icons--out");
+      $("ul.icons--regular li img").addClass("icons--out");
+      $("ul.icons--bold li img").removeClass("icons--in").addClass("icons--out");
     }, 0);
 
     // Transition icons in
@@ -98,7 +98,7 @@ $(document).ready(function() {
 
     // Transition icons in
     setTimeout(function () {
-      $("ul.icons--regular li").addClass("icons--in");
+      $("ul.icons--regular li img").addClass("icons--in");
     }, 350);
 
   };
@@ -113,9 +113,9 @@ $(document).ready(function() {
 
     // Transition icons out
     setTimeout(function () {
-      $("ul.icons--light li").removeClass("icons--in").addClass("icons--out");
-      $("ul.icons--regular li").removeClass("icons--in").addClass("icons--out");
-      $("ul.icons--bold li").addClass("icons--out");
+      $("ul.icons--light li img").removeClass("icons--in").addClass("icons--out");
+      $("ul.icons--regular li img").removeClass("icons--in").addClass("icons--out");
+      $("ul.icons--bold li img").addClass("icons--out");
     }, 0);
 
     // Transition icons in
@@ -127,24 +127,24 @@ $(document).ready(function() {
 
     // Transition icons in
     setTimeout(function () {
-      $("ul.icons--bold li").addClass("icons--in");
+      $("ul.icons--bold li img").addClass("icons--in");
     }, 350);
 
   };
 
-  function reCycleIcons (){
-    setTimeout(function () {
-      controlClicked = false;
-      cycleIcons();
-    }, 7200);
-  }
+  // function reCycleIcons (){
+  //   setTimeout(function () {
+  //     controlClicked = false;
+  //     cycleIcons();
+  //   }, 7200);
+  // }
 
   // ****************************************************
   // Show light icons
   $("#light").on("click", function() {
     controlClicked = true;
     showLight();
-    reCycleIcons();
+    // reCycleIcons();
   });
 
   // ****************************************************
@@ -152,7 +152,7 @@ $(document).ready(function() {
   $("#regular").on("click", function() {
     controlClicked = true;
     showRegular();
-    reCycleIcons();
+    // reCycleIcons();
   });
 
   // ****************************************************
@@ -160,7 +160,7 @@ $(document).ready(function() {
   $("#bold").on("click", function() {
     controlClicked = true;
     showBold();
-    reCycleIcons();
+    // reCycleIcons();
   });
 
 
