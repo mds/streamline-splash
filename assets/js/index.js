@@ -3,7 +3,7 @@ $(document).ready(function() {
   $("img").addClass("svg");
 
   //Final countdown
-  $("#expiration").countdown("2018/06/19", function(event) {
+  $("#expiration").countdown("2018/07/03", function(event) {
     $(this).html(
       event.strftime('<strong>%-D</strong>'+' days '+'<strong>%-H</strong>'+' hours '+'<strong>%M</strong>'+' mins '+'<strong>%S</strong>'+' secs')
     );
